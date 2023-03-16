@@ -1,6 +1,5 @@
 package com.Backend.FullStackBackend.model;
 
-
 import lombok.Data;
 
 import javax.persistence.Entity;
@@ -9,12 +8,12 @@ import javax.persistence.Id;
 
 @Entity
 @Data
-public class User {
+public class Department {
     @Id
     @GeneratedValue
-    private long id;
-    private String username;
-    private String name;
-    private String email;
+    private Long departmentId;
+    private String departmentName;
+    private String departmentAddress;
+    private String departmentCode;
 
 }
